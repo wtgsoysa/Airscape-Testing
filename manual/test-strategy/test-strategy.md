@@ -34,3 +34,14 @@ This document acts as a blueprint for both **manual and automation testing** pha
 - Mobile responsiveness (unless specified)
 
 ---
+
+## 3. Types of Testing
+
+- Sanity Testing - Verify critical functions work before starting full test cycles
+- Functional Testing - Check if all features meet functional requirements
+- UI/UX Testing - Validate design consistency, usability, responsiveness 
+- Data Testing - Validate AQI simulation logic & database consistency 
+- Exploratory Testing - Conduct unscripted sessions to uncover hidden bugs 
+- Regression Testing - Re-test modules after changes or bug fixes 
+
+---
