@@ -1,11 +1,12 @@
 # Airscape Test Cases
 
 # Test Cases
+## Page : Home Page (User)
 
-## 📄 General Information
+## General Information
 
-- **Project Name**        : _Your Project Name Here_
-- **Module Name**         : _Feature or Module being tested_
+- **Project Name**        : _Airscape_
+- **Module Name**         : _Home page (User)_
 - **Created By**          : _Tester’s Name_
 - **Reviewed By**         : _Reviewer’s Name_
 - **Created Date**        : _YYYY-MM-DD_
@@ -17,18 +18,18 @@
 
 | Field               | Description |
 |---------------------|-------------|
-| **Test Case ID**     | TC_001 (Use a consistent naming convention) |
-| **Test Title**       | Brief and clear title of the test |
-| **Test Objective**   | What is the goal of this test? What are you trying to verify or validate? |
-| **Preconditions**    | Describe any setup required before executing the test (e.g., user must be logged in) |
-| **Test Steps**       | Step-by-step instructions on how to execute the test |
-| **Test Data**        | Input values used in the test (e.g., username, password, ID, etc.) |
-| **Expected Result**  | The expected behavior or output after performing the test |
-| **Postconditions**   | The system state expected after test execution |
-| **Actual Result**    | The actual output/result observed during testing |
+| **Test Case ID**     | TC_001 |
+| **Test Title**       | Verify the Airscape title and description are display correctly. |
+| **Test Objective**   | Ensure that the project name and tagline are visible on the home page. |
+| **Preconditions**    | Application is run properly. |
+| **Test Steps**       | 1. Navigate to home page <br> 2. Check header section. |
+| **Test Data**        | Airscape <br> Live. Smart. Clean – Your Colombo Air Quality Companion|
+| **Expected Result**  | Title : Airscape <br> Description : Live. Smart. Clean – Your Colombo Air Quality Companion |
+| **Postconditions**   | - |
+| **Actual Result**    | - |
 | **Status**           | `Pass` / `Fail` |
-| **Severity**         | `Critical`, `High`, `Medium`, `Low` |
-| **Priority**         | `High`, `Medium`, `Low` |
+| **Severity**         | `Low` |
+| **Priority**         | `Medium` |
 | **Executed By**      | Name of the tester |
 | **Execution Date**   | Date test was executed |
 | **Comments/Notes**   | Any observations, references, or screenshots |
