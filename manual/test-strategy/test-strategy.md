@@ -55,3 +55,26 @@ This document acts as a blueprint for both **manual and automation testing** pha
 - Exploratory Testing - Based on user intuition and creative usage patterns
 
 ---
+
+## 5. Tools & Frameworks
+
+- Test Case Management - `.md` files
+- API Testing  - Postman 
+- Browser Testing - Chrome DevTools , Firefox 
+- Manual Execution - VS Code for test case writing, browser for testing 
+- Automation (Phase 2) - Playwright 
+- Reporting - Notion , Screenshots, GitHub Issues (optional) , 
+
+
+---
+
+## 6. Deliverables
+
+- `test-strategy.md`
+- `test-plan.md` (with schedule, timeline, features) 
+- Test cases by module (Admin Dashboard, Sensor, Data , AdminUser, Alert, User)
+- Bug report file with evidence 
+- Automation test scripts (Playwright phase) 
+- Final QA report with summary & status 
+
+---
