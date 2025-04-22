@@ -78,3 +78,28 @@ This document acts as a blueprint for both **manual and automation testing** pha
 - Final QA report with summary & status 
 
 ---
+
+## 7. Entry & Exit Criteria
+
+### Entry Criteria
+- Development completed for Airscape main modules (Admin Dashboard, Sensor, Data , AdminUser, Alert, User)
+- Simulated data generation is functional
+- Sensor data saved and displayed on the dashboard
+
+### Exit Criteria
+- All critical and high test cases are passed
+- No unresolved critical bugs
+- All regression cycles completed and verified
+- QA documentation and test evidence submitted
+
+## 8. Risk Management
+
+- Simulated data delays , Use manual AQI input for edge case tests 
+- Role mismatch , Test role-based login on all pages 
+- Alert not triggering , Simulate boundary values to test rules 
+
+--- 
+
+## 9. QA Author
+**Thanuga Soysa**  
+Manual Testing – Airscape QA Project 
