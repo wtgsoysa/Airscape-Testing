@@ -45,3 +45,13 @@ This document acts as a blueprint for both **manual and automation testing** pha
 - Regression Testing - Re-test modules after changes or bug fixes 
 
 ---
+
+## 4. Test Levels
+
+- Sanity Testing -  Run after deployment or new builds.
+-  System Testing -  End-to-end verification of all modules
+- Integration Testing - Verify communication between modules (e.g., sensors & alerts) 
+- Regression Testing - Re-check old features after changes 
+- Exploratory Testing - Based on user intuition and creative usage patterns
+
+---
