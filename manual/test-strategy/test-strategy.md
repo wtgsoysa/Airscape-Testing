@@ -13,3 +13,24 @@ This test strategy outlines the structured approach to verify the quality, stabi
 This document acts as a blueprint for both **manual and automation testing** phases.
 
 ---
+
+## 2. Scope of Testing
+
+### In-Scope Features:
+- Public User Dashboard (Map, AQI Popup, about, contact)
+- Admin Panel Modules:
+  - Dashboard Overview
+  - Sensor Management (CRUD, status)
+  - Data Management (filter, summary)
+  - Alert Configuration (thresholds, system/email alerts)
+  - Admin User Management (add/edit/delete Admins)
+  - Role-Based Authentication (Web Master vs Admin access)
+- Simulated AQI Data Logic
+- Real-time & historical data display
+- User interaction flows across UI
+
+### Out of Scope:
+- Load/Stress Testing (handled later in automation)
+- Mobile responsiveness (unless specified)
+
+---
