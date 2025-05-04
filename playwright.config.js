@@ -21,7 +21,7 @@ module.exports = defineConfig({
  
   use: {
     headless: false,
-    baseURL: 'http://127.0.0.1:8000/admin', 
+    baseURL: 'http://127.0.0.1:8000', 
     screenshot: 'only-on-failure', 
     video: 'retain-on-failure',    
     trace: 'on-first-retry',   
@@ -33,14 +33,7 @@ module.exports = defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+   
   ],
 
 
