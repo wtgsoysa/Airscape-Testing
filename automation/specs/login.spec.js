@@ -9,7 +9,7 @@ test.describe('Web Master Login', () => {
 
     await loginPage.gotoRoleSelectionPage();
     await loginPage.selectWebMasterRole();
-    await loginPage.loginAsWebMaster('webmaster@airscape.lk', 'password123'); // 🔁 Replace with real creds
+    await loginPage.loginAsWebMaster('webmaster@airscape.lk', 'password123'); 
     await loginPage.assertDashboardURL();
   });
 });

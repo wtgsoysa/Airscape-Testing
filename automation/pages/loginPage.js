@@ -34,6 +34,20 @@ class LoginPage {
     async assertDashboardURL() {
       await expect(this.page).toHaveURL(/.*admin\/dashboard/);
     }
+
+    async assertInvalidLoginError() {
+        const errorLocator = this.page.locator('.alert-danger'); // Or adjust based on your UI
+      
+        const isVisible = await errorLocator.isVisible();
+      
+        if (!isVisible) {
+          throw new Error('❌ Login failed, but no error message was shown. System should show an error.');
+        }
+      
+        await expect(errorLocator).toBeVisible(); // ✅ Still assert if visible
+    }
+      
+      
   }
   
 
