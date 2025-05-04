@@ -1,0 +1,23 @@
+{
+  "name": "airscape-testing",
+  "version": "1.0.0",
+  "description": "Welcome to the **Airscape** QA repository. This project contains complete **manual** and **automation testing** documentation and scripts for a Laravel-based air quality monitoring web application. It serves as both a **portfolio-grade QA reference** and a real-world testing simulation for professional development.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtgsoysa/Airscape-Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wtgsoysa/Airscape-Testing/issues"
+  },
+  "homepage": "https://github.com/wtgsoysa/Airscape-Testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.3"
+  }
+}
