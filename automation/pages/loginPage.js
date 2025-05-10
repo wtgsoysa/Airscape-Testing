@@ -8,6 +8,7 @@ class LoginPage {
   
       // ✅ Use text-based selector for WEB MASTER role
       this.webMasterRoleCard = 'text=WEB MASTER'; 
+      this.adminRoleCard = 'text=ADMINISTRATOR';
 
   
       this.emailInput = '#email';
@@ -21,22 +22,28 @@ class LoginPage {
 
     async selectWebMasterRole() {
         await this.page.click(this.webMasterRoleCard);
-      }
-      
+    }
+    
+    async selectAdminRole() {
+      await this.page.click(this.adminRoleCard);
+    }
   
+    //steps of login as webmaster
     async loginAsWebMaster(email, password) {
-      await this.page.click(this.webMasterRoleCard); // ✅ FIXED selector here
+      await this.page.click(this.webMasterRoleCard); 
       await this.page.fill(this.emailInput, email);
       await this.page.fill(this.passwordInput, password);
       await this.page.click(this.loginButton);
     }
   
+    //steps of navigate to the dashboard
     async assertDashboardURL() {
       await expect(this.page).toHaveURL(/.*admin\/dashboard/);
     }
 
+    //steps of display error message
     async assertInvalidLoginError() {
-        const errorLocator = this.page.locator('.alert-danger'); // Or adjust based on your UI
+        const errorLocator = this.page.locator('.alert-danger'); 
       
         const isVisible = await errorLocator.isVisible();
       
@@ -44,7 +51,17 @@ class LoginPage {
           throw new Error('❌ Login failed, but no error message was shown. System should show an error.');
         }
       
-        await expect(errorLocator).toBeVisible(); // ✅ Still assert if visible
+        await expect(errorLocator).toBeVisible();
+    }
+
+    //steps of login as a admin
+    async loginAsAdmin(email, password){
+
+      await this.page.click(this.adminRoleCard); 
+      await this.page.fill(this.emailInput , email);
+      await this.page.fill(this.passwordInput , password);
+      await this.page.click(this.loginButton);
+
     }
       
       
