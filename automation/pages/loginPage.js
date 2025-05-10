@@ -6,7 +6,7 @@ class LoginPage {
     constructor(page) {
       this.page = page;
   
-      // ✅ Use text-based selector for WEB MASTER role
+     
       this.webMasterRoleCard = 'text=WEB MASTER'; 
       this.adminRoleCard = 'text=ADMINISTRATOR';
 
