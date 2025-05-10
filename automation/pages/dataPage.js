@@ -7,12 +7,15 @@ class DataPage {
     // Sidebar nav to reach Data Management
     this.sideBarDataManagement = 'text=Data Management';
 
-    // Location dropdown (adjust value as needed)
+    // Filter controls
     this.sensorLocationDropdown = 'select[name="location"]';
+    this.dateFromInput = 'input[name="from"]';
+    this.dateToInput = 'input[name="to"]';
+    this.refreshButton = 'button:has-text("Refresh")';
 
     // Chart canvas and title
-    this.chartCanvas = '#aqiChart'; // from your HTML: <canvas id="aqiChart">
-    this.chartTitle = 'text=AQI Over Time'; // optional visual heading
+    this.chartCanvas = '#aqiChart'; 
+    this.chartTitle = 'text=AQI Over Time';
   }
 
   async gotoDataManagementPage() {
@@ -27,6 +30,12 @@ class DataPage {
   async assertChartIsVisible() {
     await expect(this.page.locator(this.chartCanvas)).toBeVisible();
    
+  }
+
+  async filterByDateRange(fromDate, toDate) {
+    await this.page.fill(this.dateFromInput, fromDate);
+    await this.page.fill(this.dateToInput, toDate);
+    await this.page.click(this.refreshButton);
   }
 }
 
