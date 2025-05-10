@@ -46,6 +46,23 @@ class SensorPage {
 
     await this.page.click(this.sensorAddBtn);
   }
+
+  async assertEmptyFormIsBlocked() {
+    await this.page.click(this.addSensorBtn);
+    await expect(this.page.locator(this.addSensorPopup)).toBeVisible();
+
+    // Try clicking the submit button without filling anything
+    await this.page.click(this.sensorAddBtn);
+
+    // Wait briefly to give the browser time to block the submission
+    await this.page.waitForTimeout(500);
+
+    // ✅ Check if the name input is still marked as invalid
+    const isInvalid = await this.page.$eval(this.sensorNameInput, el => !el.checkValidity());
+    expect(isInvalid).toBe(true);
+  }
+
+
 }
 
 module.exports = { SensorPage };
